@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/ic_app_bg">
+
+    <Button
+        android:id="@+id/BackButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_back_black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_margin="40dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_user_profile_pic"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="LOGIN"
+            android:textStyle="bold"
+            android:textColor="#545454"
+            android:textSize="30dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username or Email"
+            android:layout_marginTop="10dp"
+            android:textColor="#545454"
+            android:textSize="16sp"
+            android:paddingLeft="20dp"/>
+
+        <EditText
+            android:id="@+id/UsernameEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:hint="Username"
+            android:textColorHint="#ffffff"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:layout_marginTop="10dp"
+            android:textColor="#545454"
+            android:textSize="16sp"
+            android:paddingLeft="20dp"/>
+
+        <EditText
+            android:id="@+id/PasswordEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColorHint="#ffffff"
+            android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/LoginButton"
+            android:onClick="Login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_bg"
+            android:text="Login"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <ProgressBar
+            android:id="@+id/Progress"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

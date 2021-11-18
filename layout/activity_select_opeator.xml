@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectOpeatorActivity"
+    android:background="@drawable/ic_app_bg">
+
+    <Button
+        android:id="@+id/BackButton"
+        android:layout_width="40dp"
+        android:onClick="logout"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_logout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="40dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="sans-serif-medium"
+            android:text="OPERATORS"
+            android:textStyle="bold"
+            android:textColor="#545454"
+            android:textSize="30dp"
+            android:layout_marginBottom="20dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="Jio"
+                android:onClick="jioOperator"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:fontFamily="sans-serif-medium"
+                android:background="@drawable/jio_text_bg"
+                android:layout_marginRight="5dp" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_jio_logo"
+                android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Airtel"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="airtelOperator"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:fontFamily="sans-serif-medium"
+                android:background="@drawable/airtel_text_bg"
+                android:layout_marginRight="5dp" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_airtel_logo"
+                android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="Vi"
+                android:onClick="viOperator"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:fontFamily="sans-serif-medium"
+                android:background="@drawable/vodaphone_text_bg"
+                android:layout_marginRight="5dp" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_vodaphone_logo"
+                android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <Button
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="BSNL"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:onClick="bsnlOperator"
+                android:focusable="true"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:fontFamily="sans-serif-medium"
+                android:background="@drawable/bsnl_text_bg"
+                android:layout_marginRight="5dp" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_bsnl_logo"
+                android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

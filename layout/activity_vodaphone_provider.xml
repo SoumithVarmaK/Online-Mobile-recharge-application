@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_app_bg"
+    tools:context=".ProviderPages.VodaphoneProviderActivity">
+
+    <Button
+        android:id="@+id/BackButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:onClick="backButton"
+        android:background="@drawable/ic_back_black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/vodaphonePlansText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/vodaphone_text_bg"
+        android:text="Vi Plans"
+        android:textColor="#ffffff"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="35dp"
+        android:elevation="5dp"
+        android:gravity="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@id/vodaphonePlansText"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/dot1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/black_katuka"
+                android:elevation="5dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                app:layout_constraintLeft_toRightOf="@id/dot1"
+                app:layout_constraintRight_toLeftOf="@id/button1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textColor="#585858"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="365 Days Validity, Unlimited 547.5GB\n
+Unlimited Calls, 100 SMS/Day"
+                android:textSize="18dp"
+                android:layout_marginRight="5dp"/>
+
+            <Button
+                android:id="@+id/button1"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:background="@drawable/vodaphone_text_bg"
+                android:text="2,399/-"
+                android:elevation="5dp"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:foreground="?attr/selectableItemBackgroundBorderless"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/dot2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/black_katuka"
+                android:elevation="5dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                app:layout_constraintLeft_toRightOf="@id/dot2"
+                app:layout_constraintRight_toLeftOf="@id/button2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textColor="#585858"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="28 Days Validity, Unlimited 42GB,\n
+Unlimited Calls, 100 SMS/Day. "
+                android:textSize="18dp"
+                android:layout_marginRight="5dp"/>
+
+            <Button
+                android:id="@+id/button2"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:background="@drawable/vodaphone_text_bg"
+                android:text="249/-"
+                android:elevation="5dp"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:foreground="?attr/selectableItemBackgroundBorderless"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/dot3"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/black_katuka"
+                android:elevation="5dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                app:layout_constraintLeft_toRightOf="@id/dot3"
+                app:layout_constraintRight_toLeftOf="@id/button3"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textColor="#585858"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="84 Days Validity, Unlimited 126GB,\n
+Unlimited Calls, 100 SMS/Day."
+                android:textSize="18dp"
+                android:layout_marginRight="5dp"/>
+
+            <Button
+                android:id="@+id/button3"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:background="@drawable/vodaphone_text_bg"
+                android:text="599/-"
+                android:elevation="5dp"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:foreground="?attr/selectableItemBackgroundBorderless"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/dot4"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/black_katuka"
+                android:elevation="5dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                app:layout_constraintLeft_toRightOf="@id/dot4"
+                app:layout_constraintRight_toLeftOf="@id/button4"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textColor="#585858"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="28 Days Validity, Unlimited 112GB,\n
+Unlimited Calls, 100 SMS/Day."
+                android:textSize="18dp"
+                android:layout_marginRight="5dp"/>
+
+            <Button
+                android:id="@+id/button4"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:background="@drawable/vodaphone_text_bg"
+                android:text="299/-"
+                android:elevation="5dp"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:foreground="?attr/selectableItemBackgroundBorderless"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/dot5"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/black_katuka"
+                android:elevation="5dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                app:layout_constraintLeft_toRightOf="@id/dot5"
+                app:layout_constraintRight_toLeftOf="@id/button5"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textColor="#585858"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="56 Days Validity, Unlimited 84GB,\n
+Unlimited Calls, 100 SMS/Day. "
+                android:textSize="18dp"
+                android:layout_marginRight="5dp"/>
+
+            <Button
+                android:id="@+id/button5"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="70dp"
+                android:layout_height="50dp"
+                android:background="@drawable/vodaphone_text_bg"
+                android:text="399/-"
+                android:elevation="5dp"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:foreground="?attr/selectableItemBackgroundBorderless"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

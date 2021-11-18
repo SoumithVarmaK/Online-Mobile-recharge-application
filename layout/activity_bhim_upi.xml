@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_app_bg"
+    tools:context=".BhimUpiActivity">
+
+    <Button
+        android:onClick="backButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_back_black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/bhimUpiLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bhim_upi_logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="60dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/amountPayableConsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/payment_gateway_round_block_blue"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bhimUpiLogo"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amount Payable"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/amountPayableText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_round_bg"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginRight="20dp"
+            android:text="000/-"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BHIM UPI ID"
+        android:textSize="25sp"
+        android:textColor="#0F0C6B"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/amountPayableConsLayout"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/idEdit"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:hint="Enter id here"
+        android:textColorHint="#E6E6E6"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text"
+        android:layout_marginTop="10dp"/>
+
+    <ProgressBar
+        android:id="@+id/Progress"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginBottom="100dp"/>
+
+    <Button
+        android:id="@+id/proceedToPayButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:elevation="5dp"
+        android:background="@drawable/payment_gateway_round_block_blue"
+        android:text="Proceed to Pay"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="50dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

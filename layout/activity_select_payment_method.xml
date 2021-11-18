@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_app_bg"
+    tools:context=".SelectPaymentMethodActivity">
+
+    <Button
+        android:onClick="backButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_back_black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/MobileNumConsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/payment_gateway_round_block_blue"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="70dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile Number"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginLeft="20dp"/>
+
+        <EditText
+            android:id="@+id/MobileNumEdit"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:padding="5dp"
+            android:background="@drawable/white_round_bg"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginRight="20dp"
+            android:hint="Enter Mobile Number"
+            android:inputType="number"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/amountPayableConsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/payment_gateway_round_block_blue"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/MobileNumConsLayout"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amount Payable"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/amountPayableText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_round_bg"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginRight="20dp"
+            android:text="000/-"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/amountPayableConsLayout"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="100dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/payment_gateway_round_block_blue"
+            android:text="UPI"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:onClick="phonePeImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/phone_pe"
+                android:layout_marginRight="5dp"/>
+
+            <ImageView
+                android:onClick="googlePayImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/google_pay_logo"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"/>
+
+            <ImageView
+                android:onClick="paytmImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/paytm_logo"
+                android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/payment_gateway_round_block_blue"
+            android:text="Other Payment Options"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp">
+
+            <RadioButton
+                android:id="@+id/debitCardRadio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Debit Card"
+                android:textSize="18sp"/>
+
+            <RadioButton
+                android:id="@+id/creditCardRadio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Credit Card"
+                android:textSize="18sp"/>
+
+            <RadioButton
+                android:id="@+id/netBankingRadio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Net Banking"
+                android:textSize="18sp"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/proceedToPayButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:elevation="5dp"
+        android:background="@drawable/payment_gateway_round_block_blue"
+        android:text="Proceed to Pay"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="50dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
